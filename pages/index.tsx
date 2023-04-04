@@ -16,7 +16,7 @@ export default function Home() {
   };
 
   const handleClick = () => {
-    console.log('Button clicked');
+    alert('Button clicked');
   };
 
   return (
