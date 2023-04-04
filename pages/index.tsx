@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+function Home() {
   const [value, setValue] = useState('');
 
   const handleChange = (newValue: string) => {
@@ -134,3 +134,4 @@ export default function Home() {
       </main></>
   );
 }
+export default Home;
