@@ -16,7 +16,7 @@ function Home() {
   };
 
   const handleClick = () => {
-    alert('Hi '+handleChange+'!');
+    alert('Hi '+Textbox+'!');
   };
 
   return (
