@@ -16,7 +16,7 @@ const MyPage: React.FC = () => {
   };
 
   const handleClick = () => {
-    alert('Hi '+name+'!');
+    alert('Hi '+handleChange.toString+'!');
   };
 
   return (
