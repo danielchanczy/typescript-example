@@ -11,11 +11,12 @@ const inter = Inter({ subsets: ['latin'] })
 const MyPage: React.FC = () => {
   const [value, setValue] = useState('');
 
-  let name:string = ""
+  let name:string
 
-  const handleChange = (newValue: string) => {
-    name=newValue
+  const handleChange = (newValue: string) => {    
     setValue(newValue);
+    name=newValue
+    return name
   };
 
   const handleClick = () => {
