@@ -16,14 +16,13 @@ function Home() {
   };
 
   const handleClick = () => {
-    alert('Hi '+Textbox+'!');
+    alert('Hi '+Textbox.toString+'!');
   };
 
   return (
     <><div>
       <Textbox label="Enter your name:" value={value} onChange={handleChange} />
-    </div>
-    <div>
+      
       <Button onClick={handleClick} text="Submit" />
     </div>
     <Head>
