@@ -16,7 +16,7 @@ function Home() {
   };
 
   const handleClick = () => {
-    alert('Hi '+Textbox.toString+'!');
+    alert('Hi '+handleChange.toString+'!');
   };
 
   return (
