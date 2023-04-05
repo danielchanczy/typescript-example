@@ -16,7 +16,7 @@ function Home() {
   };
 
   const handleClick = () => {
-    alert('Button clicked');
+    alert('Hi '+handleChange+'!');
   };
 
   return (
