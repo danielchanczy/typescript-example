@@ -15,16 +15,17 @@ function Home() {
     setValue(newValue);
   };
 
-  const textBox = document.getElementById('myTextBox') as HTMLInputElement;
-  const textBoxValue = textBox.value;
+  const input = document.getElementById("myInput") as HTMLInputElement;
+  const inputValue = input.value;
 
   const handleClick = () => {
-    alert('Hi '+textBoxValue.toString+'!');
+    alert('Hi '+inputValue.toString+'!');
   };
 
   return (
     <><div>
-      <input id='myTextBox'><Textbox label="Enter your name:" value={value} onChange={handleChange} /></>
+      <Textbox label="Enter your name:" value={value} onChange={handleChange} />
+      <input type="text" id="myInput"></input>      
       <Button onClick={handleClick} text="Submit" />
     </div>
     <Head>
