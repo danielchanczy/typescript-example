@@ -8,10 +8,10 @@ import { useState } from 'react';
 
 const inter = Inter({ subsets: ['latin'] })
 
+let name:string
+
 const MyPage: React.FC = () => {
   const [value, setValue] = useState('');
-
-  let name:string
 
   const handleChange = (newValue: string) => {    
     setValue(newValue);
