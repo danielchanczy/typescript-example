@@ -15,10 +15,11 @@ const MyPage: React.FC = () => {
 
   const handleChange = (newValue: string) => {
     name=newValue
+    setValue(newValue);
   };
 
   const handleClick = () => {
-    alert('Hi '+handleChange.toString+'!');
+    alert('Hi '+name+'!');
   };
 
   return (
