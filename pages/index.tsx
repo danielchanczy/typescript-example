@@ -19,7 +19,7 @@ function Home() {
   };
 
   const handleClick = () => {
-    alert('Hi '+name.toString+'!');
+    alert('Hi '+name+'!');
   };
 
   return (
