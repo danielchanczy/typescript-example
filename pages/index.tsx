@@ -11,21 +11,20 @@ const inter = Inter({ subsets: ['latin'] })
 function Home() {
   const [value, setValue] = useState('');
 
+  let name: string
+
   const handleChange = (newValue: string) => {
     setValue(newValue);
+    name = newValue
   };
 
-  const input = document.getElementById("myInput") as HTMLInputElement;
-  const inputValue = input.value;
-
   const handleClick = () => {
-    alert('Hi '+inputValue.toString+'!');
+    alert('Hi '+name.toString+'!');
   };
 
   return (
     <><div>
-      <Textbox label="Enter your name:" value={value} onChange={handleChange} />
-      <input type="text" id="myInput"></input>      
+      <Textbox label="Enter your name:" value={value} onChange={handleChange} />      
       <Button onClick={handleClick} text="Submit" />
     </div>
     <Head>
