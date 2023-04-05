@@ -16,7 +16,6 @@ const MyPage: React.FC = () => {
   const handleChange = (newValue: string) => {    
     setValue(newValue);
     name=newValue
-    return name
   };
 
   const handleClick = () => {
