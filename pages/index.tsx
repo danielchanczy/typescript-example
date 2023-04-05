@@ -21,7 +21,7 @@ function Home() {
 
   return (
     <><div>
-      <Textbox label="Enter your name:" value={value} onChange={handleChange} />
+      <Textbox label="Enter your name:" value={value} />
       
       <Button onClick={handleClick} text="Submit" />
     </div>
