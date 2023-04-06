@@ -5,6 +5,12 @@ import styles from '@/styles/Home.module.css'
 import Textbox from '../components/Textbox';
 import Button from '../components/Button';
 import { useState } from 'react';
+import axios from 'axios';
+
+async function getData() {
+  const response = await axios.get('/api/data');
+  return response.data;
+}
 
 const inter = Inter({ subsets: ['latin'] })
 
