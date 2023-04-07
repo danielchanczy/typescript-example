@@ -7,7 +7,7 @@ import Button from '../components/Button';
 import { useState } from 'react';
 import axios from 'axios';
 
-async function getData() {
+async function getData(name:String) {
   const response = await axios.get('/api/data');
   return response.data;
 }
@@ -24,8 +24,10 @@ const MyPage: React.FC = () => {
     name=newValue
   };
 
-  const handleClick = () => {
+  const handleClick = async () => {
     alert('Hi '+name+'!');
+    const data = await getData(name);
+    alert(data);
   };
 
   return (
