@@ -7,11 +7,6 @@ import Button from '../components/Button';
 import { useState } from 'react';
 import axios from 'axios';
 
-async function getData(name:String) {
-  const response = await axios.get('/api/data');
-  return response.data;
-}
-
 const inter = Inter({ subsets: ['latin'] })
 
 let name:string
@@ -24,10 +19,16 @@ const MyPage: React.FC = () => {
     name=newValue
   };
 
-  const handleClick = async () => {
+  const handleClick = () => {
     alert('Hi '+name+'!');
-    const data = await getData(name);
-    alert(data);
+    axios.post('http://127.0.0.1:3000/api/data', { name })
+      .then(response => {
+        console.log(response.data);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+
   };
 
   return (
