@@ -28,7 +28,6 @@ const MyPage: React.FC = () => {
       .catch(error => {
         console.log(error);
       });
-
   };
 
   return (
