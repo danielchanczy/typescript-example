@@ -21,7 +21,7 @@ const MyPage: React.FC = () => {
 
   const handleClick = () => {
     alert('Hi '+name+'!');
-    axios.post('http://127.0.0.1:3000/api/data', { name })
+    axios.post('http://127.0.0.1:3000/students/get-name-by-id?id=1', { name })
       .then(response => {
         console.log(response.data);
       })
